@@ -1,0 +1,44 @@
+<div class="about">
+  <div class="row" >
+    <div style="vertical-align: bottom; margin-top: 100px;">
+      <img src="{{ tool.image }}" alt="{{ tool.name }}" />
+    </div>
+  </div>
+  <div class="row">
+    <div class="tool-page-header">
+      <h1>{{ tool.name }}</h1>
+      <p></p>
+      <ul>
+        <li style="padding-bottom: 12px" *ngFor="let item of tool.overview">
+          {{ item }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container" style="justify-content: space-evenly; background-color: aqua;">
+    <div class="each-block" *ngFor="let fact of tool.facts">
+        <div>
+            <h1>{{fact.bold}}</h1>
+        </div>
+        <div>
+            <p>{{fact.content}}</p>
+        </div>
+    </div>
+</div>
+
+<div>
+  <h2 style="text-align: center;">Services Offered</h2>
+  <div class="container" style="justify-content: space-evenly;">
+      <div *ngFor="let service of tool.services" style="padding: 20px;">
+        <div class="image-block">
+          <img src="{{ service.serviceImage }}" alt="{{ service.serviceName }}">
+        </div>
+        <div>
+          <h4>{{ service.serviceName }}</h4>
+          <p>{{ service.serviceDescription }}</p>
+        </div>
+      </div>
+  </div>
+</div>

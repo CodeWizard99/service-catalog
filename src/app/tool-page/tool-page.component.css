@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.about{
+    display: flex;
+}
+
+.row{
+    vertical-align: middle;
+}
+
+.row img{
+    max-width: 100%;
+}
+
+.each-block{
+    width: 100px;
+}

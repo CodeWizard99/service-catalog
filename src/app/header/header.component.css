@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links a{
+    padding: 10px;
+    color: white;
+}
+
+.nav-links a:active{
+    background-color: aqua;
+}
+
+.nav-links a:hover{
+    background-color: white;
+    color: black;
+}
+
+.spacer{
+    min-width: 70%;
+}
+
+.small-container{
+    background-color: #00395D;
+}
